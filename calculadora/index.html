@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <input type="number" id="campo" autocomplete="off">
+        <div>
+            <button onclick="keyNum('7')">7</button>
+            <button onclick="keyNum('8')">8</button>
+            <button onclick="keyNum('9')">9</button>
+            <button onclick="selOperacao('div')" id="div">/</button>
+            <button onclick="apagar()">←</button>
+        </div>
+        <div>
+            <button onclick="keyNum('4')">4</button>
+            <button onclick="keyNum('5')">5</button>
+            <button onclick="keyNum('6')">6</button>
+            <button onclick="selOperacao('mul')" id="mul">x</button>
+            <button class="invi"></button>
+        </div>
+        <div>
+            <button onclick="keyNum('1')">1</button>
+            <button onclick="keyNum('2')">2</button>
+            <button onclick="keyNum('3')">3</button>
+            <button onclick="selOperacao('sub')" id="sub">-</button>
+            <button class="invi"></button>
+        </div>
+        <div>
+            <button onclick="keyNum('0')">0</button>
+            <button onclick="clearAll()" id="keyC">C</button>
+            <button onclick="resultado()" id="igual">=</button>
+            <button onclick="selOperacao('soma')" id="soma">+</button>
+            <button class="invi"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
